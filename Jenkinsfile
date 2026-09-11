@@ -11,7 +11,7 @@ pipeline {
                 }
             }
             steps {
-                sh ```
+                sh '''
                     ls -la
                     node --verison
                     npm --verison
@@ -19,7 +19,7 @@ pipeline {
                     npm run build
                     ls -la
                     docker image inspect node:18-alpine
-                ```
+                '''
             }
         }
     }
