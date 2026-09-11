@@ -18,7 +18,7 @@ pipeline {
                     npm ci
                     npm run build
                     ls -la
-                    docker image inspect node:18-alpine
+                    #docker image inspect node:18-alpine
                 '''
             }
         }
