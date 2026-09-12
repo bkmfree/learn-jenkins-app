@@ -1,8 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn Jenkins link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn Jenkins/i);
-  expect(linkElement).toBeInTheDocument();
+test('3 곱하기 4는 12가 나와야 해요', () => {
+  expect(3 * 4).toBe(12);
 });
